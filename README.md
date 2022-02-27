@@ -1,1 +1,1 @@
-# awesome-koltin-springboot-multimodule
+# awesome-kotlin-springboot-multimodule
