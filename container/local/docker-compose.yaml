@@ -1,0 +1,16 @@
+version: "3"
+services:
+  mysql-db:
+    platform: linux/x86_64
+    image: mysql:latest
+    container_name: "local-mysql-01"
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_DATABASE=kotlin-springboot
+      - MYSQL_ROOT_PASSWORD=default_password
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+    volumes:
+      - ~/mysql:/var/lib/mysql
