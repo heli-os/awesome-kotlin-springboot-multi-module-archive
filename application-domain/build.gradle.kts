@@ -21,10 +21,12 @@ allOpen {
 }
 
 dependencies {
-    implementation(project(":application-infrastructure"))
+    api(project(":application-infrastructure"))
 
     val queryDslVersion: String by project
     api("org.springframework.boot:spring-boot-starter-data-jpa")
+
+    // querydsl
     implementation("com.querydsl:querydsl-jpa")
     kapt("com.querydsl:querydsl-apt:$queryDslVersion:jpa")
 }

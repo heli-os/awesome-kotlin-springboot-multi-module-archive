@@ -18,6 +18,6 @@ pluginManagement {
 
 rootProject.name = "awesome-kotlin-springboot-multi-module"
 
-include("application-domain")
 include("application-infrastructure")
+include("application-domain")
 include("application-interface")
