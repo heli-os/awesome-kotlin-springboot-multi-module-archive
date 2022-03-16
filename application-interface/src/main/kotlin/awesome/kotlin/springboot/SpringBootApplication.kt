@@ -1,4 +1,4 @@
-package awesome.koltin.springboot
+package awesome.kotlin.springboot
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController
 class SpringBootApplication
 
 fun main(args: Array<String>) {
-    runApplication<awesome.koltin.springboot.SpringBootApplication>(*args)
+    runApplication<awesome.kotlin.springboot.SpringBootApplication>(*args)
 }
 
 @RestController
